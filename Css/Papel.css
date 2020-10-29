@@ -1,0 +1,20 @@
+body {
+  background: rgb(204,204,204); 
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  }
+page[size="Letter"] {  
+  width: 21.59cm;
+  height: 27.94cm; 
+}
+ 
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
