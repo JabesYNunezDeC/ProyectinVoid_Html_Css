@@ -4,8 +4,9 @@ body {
 page {
   background: white;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5cm;
+  margin:  5px auto;
+  padding: 5px;
+
   }
 page[size="Letter"] {  
   width: 21.59cm;

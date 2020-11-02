@@ -4,14 +4,154 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="Css/Papel.css">
-	<title>Document</title>
+	<title>Factura-MIR</title>
 	<!--Set Invoice with A4 A5 A3-->
 	<!--Set to Lanscape Or Portrait-->
-		<page size="Letter"></page>
+		
+		<style>
+			*{
+				box-sizing: border-box;
+				padding: 0px;
+				margin: 0px;
+			}
+			/*Page Heading*/
+			.heading{
+				display: grid;
+				grid-gap: 10px;
+				grid-template-columns: repeat(2, 1fr);
+				margin:5px;
+			}
+			.compdata{
+				width: 480px;
+			}
+			.image{
+				height: 200px;
+				
+			}
+			.img{
+				width: 100%;
+			}
+			#compname{
+				font-size: 50px;
+				color: #fff;
+				font-weight: bold;
+				background:#0F0357;
+			}
+			/*Tableheading*/
+			.Tcontent{
+				border-collapse: collapse;
+				width: 100%;
+				margin:25px 0;
+				font-size: 0.9em;
+				min-width: 400px;
+			}
+
+			.Tcontent th, td{
+				padding: 12px 15px;
+			}
+			.Tcontent tr{
+				border-bottom: solid 1px #dddddd;
+			}
+			.Tcontent tfoot td{
+				background-color: #f3f3f3;
+			}
+			.Tcontent tfoot tr:last-of-type{
+				border-bottom: 2px solid #0f0357;
+			}
+			.Tabletitle{
+				font-size: 30px;
+				background:#0F0357;
+				color: #fff;
+			}
+			
+
+		</style>
 </head>
+<page size="Letter">
 <body>
-	
+	<div id="container">
+		<!--PHeading-->
+		<div class="heading">
+			<div class="compdata">
+				<p id="compname">Fundación MIR</p>
+				<p>Lorem ipsum, dolor.</p>
+				<p>+1 (000) 000 000</p>
+				<p>Lorem, ipsum, dolor.</p>
+			</div>
+			<div class="image">
+				<img src="Img/demo-image-3000.jpg" alt="" class="img">
+			</div>	
+		</div>
+		<!--table-->
+		<table  class="Tcontent">
+			<thead>
+				<tr>
+					<th class="Tabletitle" colspan="5">Factura</th>
+				</tr>
+			</thead>
+			<tr>
+				<th>Lorem, ipsum dolor.	</th>
+				<td>Lorem, ipsum.</td>
+			</tr>
+			<tr>
+				<th>Lorem ipsum, dolor.	</th>
+				<td>Lorem, ipsum.</td>
+			</tr>
+			<tr>
+				<th>Lorem, ipsum, dolor.	</th>
+				<td>Lorem, ipsum.</td>
+			</tr>
+			<tbody>
+				<tr>
+					<th  class="Tabletitle" colspan="5">Datos</th>
+				</tr>
+				<tr rowspand>
+					<th>Lorem, ipsum dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th>Lorem, ipsum dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th>Lorem, ipsum dolor.</th>
+					<td>Lorem ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th class="Tabletitle" colspan="5">Informe de cuenta</th>
+				</tr>
+				<tr>
+					<th>Lorem, ipsum, dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th>Lorem ipsum, dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th>Lorem ipsum, dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+				</tr>
+				<tr>
+					<th>Lorem, ipsum, dolor.</th>
+					<td>Lorem, ipsum, dolor.</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th class="Tabletitle" colspan="5">Detalles</th>
+				</tr>
+				<tr>
+					<td>Lorem ipsum, dolor.</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+
+	</div>
 	
 
-</body>
+</body></page>
 </html>
