@@ -14,18 +14,19 @@
 				padding: 0px;
 				margin: 0px;
 			}
-			/*Page Heading*/
+/*PageHeadingCSS*/
 			.heading{
 				display: grid;
 				grid-gap: 10px;
 				grid-template-columns: repeat(2, 1fr);
 				margin:5px;
+				margin-bottom: 10px;
 			}
 			.compdata{
-				width: 480px;
+				width: 600px;
 			}
 			.image{
-				height: 200px;
+				height: 100px;
 				
 			}
 			.img{
@@ -35,19 +36,26 @@
 				font-size: 50px;
 				color: #fff;
 				font-weight: bold;
-				background:#0F0357;
+				background:#1C069D;
+				border-bottom: 2px solid #0f0357;
 			}
-			/*Tableheading*/
+/*TableCotentCss*/
 			.Tcontent{
 				border-collapse: collapse;
 				width: 100%;
-				margin:25px 0;
+				margin:10px 0;
 				font-size: 0.9em;
 				min-width: 400px;
 			}
 
-			.Tcontent th, td{
+			.Tcontent td{
 				padding: 12px 15px;
+				background-color: #f3f3f3;
+			}
+			.Tcontent th{
+				text-align: left;
+				padding: 12px 15px;
+				background-color: #EBEBEB;
 			}
 			.Tcontent tr{
 				border-bottom: solid 1px #dddddd;
@@ -59,99 +67,126 @@
 				border-bottom: 2px solid #0f0357;
 			}
 			.Tabletitle{
-				font-size: 30px;
-				background:#0F0357;
-				color: #fff;
+				font-size: 12px;
+				color: #000;
+				padding: 0px 15px;
+				text-align: left;
 			}
-			
-
+			#tipoago{
+				font-size: 15px;
+				background-color:#EBEBEB;
+				border-bottom: 2px solid #0f0357;
+			}
+/*Fielset/legendCss*/
+			fieldset{
+				padding: 5px;
+				border: solid 1px #0F0357;
+				border-radius: 3px;
+				margin:10px;
+			}			
+			fieldset > legend{
+				margin-left:4rem;
+				font-weight: bold;
+				padding: 0 0.3rem;
+				line-height: 1;
+			}
 		</style>
 </head>
 <page size="Letter">
-<body>
-	<div id="container">
+	<body>
+		<div id="container">
 		<!--PHeading-->
-		<div class="heading">
-			<div class="compdata">
-				<p id="compname">Fundación MIR</p>
-				<p>Lorem ipsum, dolor.</p>
-				<p>+1 (000) 000 000</p>
-				<p>Lorem, ipsum, dolor.</p>
+			<div class="heading">
+				<div class="compdata">
+					<p id="compname">Fundación MIR</p>
+					<p>Lorem ipsum, dolor.</p>
+					<p>+1 (000) 000 000</p>
+					<p>Lorem, ipsum, dolor.</p>
+				</div>
+						<div class="image">
+							<img src="Img/demo-image-3000.jpg" alt="" class="img">
+						</div>	
 			</div>
-			<div class="image">
-				<img src="Img/demo-image-3000.jpg" alt="" class="img">
-			</div>	
-		</div>
-		<!--table-->
-		<table  class="Tcontent">
-			<thead>
-				<tr>
-					<th class="Tabletitle" colspan="5">Factura</th>
-				</tr>
-			</thead>
-			<tr>
-				<th>Lorem, ipsum dolor.	</th>
-				<td>Lorem, ipsum.</td>
-			</tr>
-			<tr>
-				<th>Lorem ipsum, dolor.	</th>
-				<td>Lorem, ipsum.</td>
-			</tr>
-			<tr>
-				<th>Lorem, ipsum, dolor.	</th>
-				<td>Lorem, ipsum.</td>
-			</tr>
-			<tbody>
-				<tr>
-					<th  class="Tabletitle" colspan="5">Datos</th>
-				</tr>
-				<tr rowspand>
-					<th>Lorem, ipsum dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th>Lorem, ipsum dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th>Lorem, ipsum dolor.</th>
-					<td>Lorem ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th class="Tabletitle" colspan="5">Informe de cuenta</th>
-				</tr>
-				<tr>
-					<th>Lorem, ipsum, dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th>Lorem ipsum, dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th>Lorem ipsum, dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
-				</tr>
-				<tr>
-					<th>Lorem, ipsum, dolor.</th>
-					<td>Lorem, ipsum, dolor.</td>
+<!--HeadingTable-->
+				<fieldset>
+					<legend>Datos de facturación & estudiante</legend>
+							<table  class="Tcontent">
+								<thead>
+										
+										<tr>
+											<th>Lorem, ipsum dolor:	</th>
+											<td>Lorem, ipsum.</td>
+											<th>Lorem, ipsum:</th>
+											<td>Lorem, ipsum.</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>Lorem ipsum, dolor:	</th>
+											<td>Lorem, ipsum.</td>
+											<th>Lorem, ipsum:</th>
+											<td>Lorem, ipsum.</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>Lorem, ipsum, dolor:</th>
+											<td>Lorem, ipsum.</td>
+											<th>Lorem, ipsum:</th>
+											<td>Lorem, ipsum.</td>
+											<td></td>
+											<td></td>
+										</tr>
+								</thead>
+							</table>
+					</fieldset>
+
+<!--bodyTable-->
+					<fieldset>
+								<legend>Informe de cuenta</legend>
+							<Table class="Tcontent">
+								<tbody>
+															
+												<tr>
+													<th>Lorem, ipsum, dolor:</th>
+													<td>Lorem, ipsum, dolor.</td>
+												</tr>
+												<tr>
+													<th>Lorem ipsum, dolor:</th>
+													<td>Lorem, ipsum, dolor.</td>
+												</tr>
+												<tr>
+													<th>Lorem ipsum, dolor:</th>
+													<td>Lorem, ipsum, dolor.</td>
+												</tr>
+								</tbody>
+									<table class="Tcontent">
+										<tr>
+											<th id="tipoago" colspan="4">Lorem, ipsum, dolor;</th>
+										</tr>
+											<tr>
+												<td>Lorem, ipsum.</td>
+												<td>Lorem, ipsum.</td>
+												<td>Lorem, ipsum.</td>
+												<td>Lorem, ipsum.</td>
+											</tr>
+									</table>
+							</Table>
+					</fieldset>	
+<!--FooterTable-->
+					<fieldset>
+						<legend>Detalles</legend>
 					
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<th class="Tabletitle" colspan="5">Detalles</th>
-				</tr>
-				<tr>
-					<td>Lorem ipsum, dolor.</td>
-				</tr>
-			</tfoot>
-		</table>
-
-
-
-	</div>
+						<table class="Tcontent">		
+							<tfoot>
+								<tr>
+									<td>Lorem ipsum, dolor.</td>
+								</tr>
+							</tfoot>
+						</table>
+					</fieldset>
+		</div>
 	
-
-</body></page>
+	</body>
+</page>
 </html>
